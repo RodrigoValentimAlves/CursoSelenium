@@ -1,0 +1,23 @@
+package pages;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.support.ui.FluentWait;
+
+public class ModalProdutoPage {
+	
+	private WebDriver driver;
+	
+	private By mensagemProdutoAdicionado = By.id("myModalLabel");
+	
+	
+	ModalProdutoPage(WebDriver driver) {
+		this.driver = driver;
+	}
+	
+	public String obterMensagemProdutoAdicionado(){
+		FluentWait wait = newFluentWait(driver). 
+		
+		return driver.findElement(mensagemProdutoAdicionado).getText();
+	}
+}
